@@ -7,7 +7,6 @@ public class Course {
         name = "unknown";
         credits = 0;
         takingCourse = false;
-
     }
 
     public Course (String name, int credits, boolean takingCourse) {
@@ -33,10 +32,17 @@ public class Course {
     }
 
     public void setCredits (int credits) {
-        this.credits = credits;
+        if (credits > 0) {
+            this.credits = credits;
+        }
     }
 
     public void setTakingCourse (boolean takingCourse) {
         this.takingCourse = takingCourse;
+    }
+
+    @Override
+    public String toString() {
+        return "Course: " + name + " | Credits: " + credits + " | Taking Course: " + takingCourse;
     }
 }

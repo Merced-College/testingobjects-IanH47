@@ -1,7 +1,7 @@
 public class Dog {
     //data variables
-    public String name;
-    public String breed;
+    private String name;
+    private String breed;
 
     public Dog() {            // default constructor
         name = "Unknown";
