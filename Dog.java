@@ -2,6 +2,7 @@ public class Dog {
     //data variables
     private String name;
     private String breed;
+    private int age;
 
     public Dog() {            // default constructor
         name = "Unknown";
@@ -13,6 +14,7 @@ public class Dog {
         this.name = name;
         this.age = age;
         this.breed = breed;
+    }
 
     public String getName() { 
         return name; 
@@ -42,6 +44,5 @@ public class Dog {
     @Override
     public String toString() {
         return "Dog{name='" + name + "', age=" + age + ", breed='" + breed + "'}";
-}
-}
+    }
 }
